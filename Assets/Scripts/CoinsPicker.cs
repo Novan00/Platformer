@@ -12,12 +12,4 @@ public class CoinsPicker : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.TryGetComponent<Player>(out Player player))
-        {
-            
-        }
-    }
 }
