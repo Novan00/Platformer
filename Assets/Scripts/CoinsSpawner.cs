@@ -8,14 +8,14 @@ public class CoinsSpawner : MonoBehaviour
 
     private void Start()
     {
-        CoinsSpawn();
+        Spawn();
     }
 
-    private void CoinsSpawn()
+    private void Spawn()
     {
         for (int i = 0; i < _spawnPoints.Count; i++)
         {
-            Coin _newCoin = Instantiate(_coin, _spawnPoints[i].position, Quaternion.identity);
+            Instantiate(_coin, _spawnPoints[i].position, Quaternion.identity);
         }
     }
 }
